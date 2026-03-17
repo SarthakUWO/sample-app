@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: production-app
+      app: prod-app
   template:
     metadata:
       labels:
-        app: production-app
+        app: prod-app
     spec:
       containers:
-      - name: production-container
-        image: <todo>
-        ports:
-        - containerPort: 8080
+        - name: prod-container
+          image: europe-west4-docker.pkg.dev/qwiklabs-gcp-04-4b3abc73b08c/my-repository/hello-cloudbuild:v1.0
+          ports:
+            - containerPort: 8080
