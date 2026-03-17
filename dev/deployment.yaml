@@ -13,7 +13,7 @@ spec:
         app: dev-app
     spec:
       containers:
-      - name: dev-container
-        image: <todo>
-        ports:
-        - containerPort: 8080
+        - name: dev-container
+          image: europe-west4-docker.pkg.dev/YOUR_PROJECT_ID/my-repository/hello-cloudbuild-dev:v1.0
+          ports:
+            - containerPort: 8080
